@@ -1,9 +1,7 @@
-variable "subnet_ids" {
+variable "public_subnet_ids" {
   type = list(string)
-  description = "Subnets usadas pelo Load Balancer"
 }
 
-variable "sg_id" {
+variable "alb_sg_id" {
   type = string
-  description = "Security Group do Load Balancer"
 }

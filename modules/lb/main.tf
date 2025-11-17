@@ -1,7 +1,6 @@
-resource "aws_lb" "this" {
-  name               = "my-lb"
-  internal           = false
+resource "aws_lb" "alb" {
+  name               = "my-alb"
   load_balancer_type = "application"
-  security_groups    = [var.sg_id]
-  subnets            = var.subnet_ids
+  subnets            = var.public_subnet_ids
+  security_groups    = [var.alb_sg_id]
 }
