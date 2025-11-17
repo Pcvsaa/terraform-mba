@@ -15,10 +15,3 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
-variable "domain" {
-  description = "Dominio no Route53"
-}
-
-variable "subdomain" {
-  description = "Subdominio (ex: www)"
-}
