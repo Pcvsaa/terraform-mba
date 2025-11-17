@@ -15,3 +15,14 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
+# ADICIONE ESTES DOIS BLOCOS ABAIXO
+
+variable "domain" {
+  description = "O nome do domínio principal (ex: meudominio.com)"
+  type        = string
+}
+
+variable "subdomain" {
+  description = "O subdomínio a ser criado (ex: app, www)"
+  type        = string
+}
