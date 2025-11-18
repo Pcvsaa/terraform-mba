@@ -101,3 +101,7 @@ resource "aws_autoscaling_group" "asg" {
 
   target_group_arns = [aws_lb_target_group.tg.arn]
 }
+
+resource "aws_route53_zone" "main" {
+  name = var.domain
+}
